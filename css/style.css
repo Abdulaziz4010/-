@@ -753,6 +753,7 @@ body {
   display: flex;
   flex-direction: column;
   margin-top: 50px;
+  background-color: #f9f9f9;
 }
 .footer .footer__btns {
   width: 100%;
@@ -776,23 +777,124 @@ body {
 }
 .footer .footer__item {
   display: flex;
-  gap: 50px;
+  gap: 10px;
 }
 .footer .footer__lists {
+  width: 50%;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 .footer .footer__lists a {
   color: black;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 600;
 }
 .footer .footer__box {
+  width: 100%;
+  height: 120px;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  border-bottom: 1px solid black;
 }
 .footer .footer__box__title {
   font-size: 18px;
+}
+.footer .footer__box__desc {
+  width: 50%;
+  font-size: 8px;
+}
+.footer .footer__bottom {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  text-align: end;
+}
+.footer .footer__bottom__list {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+.footer .footer__bottom__list a {
+  font-size: 16px;
+  color: black;
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    background-color: #f9f9f9;
+  }
+  .footer .footer__btns {
+    width: 100%;
+    text-align: end;
+    justify-content: end;
+  }
+  .footer .footer__btn {
+    width: 70px;
+    font-size: 18px;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 16px;
+  }
+  .footer .footer__nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .footer .footer__item {
+    width: 40%;
+    display: flex;
+    gap: 10px;
+  }
+  .footer .footer__lists {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer .footer__lists a {
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .footer .footer__box {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-bottom: 1px solid black;
+  }
+  .footer .footer__box__title {
+    font-size: 22px;
+  }
+  .footer .footer__box__desc {
+    width: 100%;
+    font-size: 16px;
+  }
+  .footer .footer__bottom {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    text-align: end;
+  }
+  .footer .footer__bottom__list {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+  }
+  .footer .footer__bottom__list a {
+    font-size: 16px;
+    color: black;
+  }
 }
