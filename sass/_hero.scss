@@ -1,0 +1,44 @@
+.hero {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/hero\ big\ img.svg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  .hero__item {
+    width: 100%;
+    height: 504px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero__item__title {
+    font-size: 32px;
+    font-weight: 400;
+  }
+  .hero__item__desc {
+    font-size: 16px;
+    font-weight: 300;
+  }
+  .hero__item__info {
+    font-size: 12px;
+    font-weight: 100;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    width: 100%;
+    .hero__item__title {
+      font-size: 48px;
+    }
+    .hero__item__desc {
+      font-size: 18px;
+      letter-spacing: 1px;
+    }
+  }
+}
